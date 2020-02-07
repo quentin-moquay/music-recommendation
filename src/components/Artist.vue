@@ -1,5 +1,10 @@
 <template>
     <span class="notification is-dark">
+        <div class="tags is-centered">
+          <span class="tag is-static" v-for="tag in value.tags" v-bind:key="tag">
+              <p>{{tag}}</p>
+          </span>
+        </div>
         <p class="subtitle">{{value.name}}</p>
         <figure class="image artist-image">
             <img :src="value.image" />
