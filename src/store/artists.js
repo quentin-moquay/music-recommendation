@@ -44,7 +44,7 @@ const data = new ArtistsBuilder()
         name: 'DJ Hyper',
         tags: ['Indus', 'Electro'],
         image: 'https://i.ytimg.com/vi/G70S5fumHso/maxresdefault.jpg',
-        resume: 'DJ Hyper est un DJ, producteur et remixeur britannique connu pour son utilisation libérale de la basse live, des guitares et des voix sans compromis.'
+        resume: 'Prod assez aggressive, son industriel avec de vrais instruments (guitare, basse, etc.) totalement modifiées au mixage.'
     })
     .addTrack({
         name: 'Clockwork',
@@ -66,7 +66,7 @@ const data = new ArtistsBuilder()
         name: 'Trevor Something',
         tags: ['Vaporwave', 'Retro'],
         image: 'https://i.ytimg.com/vi/LYOtZvwNCsc/maxresdefault.jpg',
-        resume: 'Trevor Something does not exists.'
+        resume: "Un univers hyper planant et \"weird\" mixés sur des synthés qui pourraient sortir des années 80. La voix donne l'impression d'entendre aussi un vieux groupe de ces années-là."
     })
     .addTrack({
         name: 'The Ghost',
@@ -92,7 +92,7 @@ const data = new ArtistsBuilder()
         name: 'PNL',
         tags: ['Vaporwave', 'Rap'],
         image: 'https://static.booska-p.com/images/news_opti/1000/pnl-entre-dans-la-legende-et-passe-le-cap-des-10-singles-de-diamant.jpg',
-        resume: 'Lyrics claquées. Instrus planantes.'
+        resume: 'Lyrics claquées au sol. Instrus planantes et diversifiées. Ça pourrait être tellement mieux si les textes étaient plus travaillées et matures.'
     })
     .addTrack({
         name: 'Naha',
@@ -136,7 +136,7 @@ const data = new ArtistsBuilder()
         name: 'Astropilot',
         tags: ['Downtempo', 'Psybient'],
         image: 'https://f4.bcbits.com/img/0008493419_10.jpg',
-        resume: ''
+        resume: 'Comme tout le mouvement Downtempo, les morceaux sont longs à démarrer et se développent sur une dizaine de minutes. Idéal pour se concentrer sur autre chose, hyper agréable pour se détendre aussi.'
     })
     .addTrack({
         name: 'Betelgeuse',
@@ -150,7 +150,7 @@ const data = new ArtistsBuilder()
         name: 'Alice in Chains',
         tags: ['Rock', 'Metal', 'Depressive'],
         image: 'https://france3-regions.francetvinfo.fr/hauts-de-france/sites/regions_france3/files/styles/top_big/public/assets/images/2014/04/22/alice_in_chains.jpg?itok=yRCtGccc',
-        resume: ''
+        resume: 'On classe parfois ça dans le Dark-rock, ça porte bien son nom. Certains trouvent que ça sonne beaucoup comme du Nirvana (surtout au niveau de la voix) mais dans un ensemble qui sonnerait plutôt Ouest des USA.'
     })
     .addTrack({
         name: 'All secrets known',
@@ -192,7 +192,7 @@ const data = new ArtistsBuilder()
         name: 'Meshuggah',
         tags: ['Metal', 'Brutal'],
         image: 'https://i2.wp.com/www.trexsound.com/wp-content/uploads/2012/01/Meshuggah.jpg?fit=625%2C417',
-        resume: ''
+        resume: "La musique c'est surtout du rythme quand on y pense. Des notes sans aucun rythme, c'est du bruit. Du rythme sans notes, ça reste un truc entrainant. Meshuggah l'a bien compris, ici on cherche uniquement le rythme. Le batteur est totalement ouf et les guitares hyper graves balancent du contretemps ultra-saturées en permanence. Totalement hypnotique et brutal."
     })
     .addTrack({
         name: 'Clockworks',
@@ -222,7 +222,7 @@ const data = new ArtistsBuilder()
         name: 'Breton',
         tags: ['Pop', 'Electro'],
         image: 'https://www.phonographecorp.com/wp-content/uploads/2012/04/breton04bd.jpg',
-        resume: ''
+        resume: 'Un groupe Britannique plutôt sympa à écouter pour son côté Pop entrainant.'
     })
     .addTrack({
         name: 'Envy',
@@ -240,7 +240,7 @@ const data = new ArtistsBuilder()
         name: 'Ulver',
         tags: ['Electro', 'Experimental', 'Metal', 'Depressive'],
         image: 'https://www.rock-progresivo.com/wp-content/uploads/2012/04/Ulver-3.jpg',
-        resume: ''
+        resume: "La Norvège ça doit être déprimant. Tous les groupes que je connais sont des trucs darks. Ulver c'est un groupe expérimental qui a envie de pendre quand il compose j'imagine. Ils aiment bien avoir un mec tout nu sur scène sur un piano lancinant aussi (à voir dans la dernière vidéo !)"
     })
     .addTrack({
         name: 'Nemoralia',
@@ -270,7 +270,7 @@ const data = new ArtistsBuilder()
         name: 'Igorrr',
         tags: ['Experimental', 'Metal', 'Electro'],
         image: 'http://sourdoreille.net/2016/wp-content/uploads/2017/09/igorrr-gautier-serre-06-credits-franois-nuq.jpg',
-        resume: ''
+        resume: "Projet porté par un français complètement taré qui aime mixer à peu près toutes les musiques qu'ils aiment dans le même morceau. Con et sans aucun sens, mais totalement assumé. Il n'y a jamais de paroles, juste des vocalises. le mec a bien compris qu'on s'en foutait."
     })
     .addTrack({
         name: 'Ieud',
@@ -300,7 +300,7 @@ const data = new ArtistsBuilder()
         name: 'Carpenter Brut',
         tags: ['Synthwave', 'Metal'],
         image: 'https://static-cdn.arte.tv/resize/YpAXRXjE8vbTBxSky2cURwg0lIs=/940x530/smart/filters:strip_icc()/apios/Img_data/cache-buster-1572445650/8/081622-003-A_2889388.jpg',
-        resume: ''
+        resume: "Groupe français qui mixe le son des synthés des années 80 avec la violence de la disto d'aujourd'hui. Tous les morceaux couvrent le spectre des fréquences sans honte aucune. Putain d'intense."
     })
     .addTrack({
         name: 'Le perv',
@@ -346,7 +346,7 @@ const data = new ArtistsBuilder()
         name: 'Gost',
         tags: ['Synthwave', 'Brutal'],
         image: 'https://f4.bcbits.com/img/0008407715_0',
-        resume: ''
+        resume: "Dans la Synthwave, Gost, c'est un peu le mec qui pousse la distortion au max et qui fait un truc LOURD et GRAVE."
     })
     .addTrack({
         name: 'Genesee Avenue',
@@ -375,7 +375,7 @@ const data = new ArtistsBuilder()
     .addArtist({
         name: 'Darren Korb',
         tags: ['Rock', 'Chill', 'Videogame'],
-        resume: '',
+        resume: "C'est un compositeur, principalement de jeux vidéo. Tout ça est issu de la B.O d'un jeu nommé Transistor. C'est vraiment cool et idéal pour bosser.",
         image: 'https://i.ytimg.com/vi/p7ziU3RRacw/maxresdefault.jpg'
     })
     .addTrack({
@@ -429,7 +429,7 @@ const data = new ArtistsBuilder()
     .addArtist({
         name: 'CHVRCHES',
         tags: ['Rock', 'Pop'],
-        resume: '',
+        resume: "Je connais pas bien la Pop en vrai. C'est peut-être pas très original mais ça percute bien et la chanteuse gère bien. Juste un peu répétitif et forcément lassant à la longue.",
         image: 'https://www.breizh-info.com/wp-content/uploads/2019/06/chvrches.jpg'
     })
     .addTrack({
@@ -456,7 +456,7 @@ const data = new ArtistsBuilder()
         name: 'God is an Astronaut',
         tags: ['Post-Rock'],
         image: 'https://www.szenik.eu/wp-content/uploads/older/rock_pop_electro/cac_/god_is_an_astronaut_substage_karlsruhe!_1000x562!_1!_0x0!_0!_FFFFFF.jpg',
-        resume: ''
+        resume: "Le Post-Rock c'est un peu le Downtempo du Rock. Mouvement majoritairement instrumental qui développe donc ces morceaux sur 6 à 12 minutes. L'ambiance est assez mélancolique de manière générale."
     })
     .addTrack({
         name: 'In The Distance Fading',
@@ -486,7 +486,7 @@ const data = new ArtistsBuilder()
         name: 'NF',
         tags: ['Rap'],
         image: 'https://cdn-www.konbini.com/fr/files/2019/08/nf-feat.jpg',
-        resume: ''
+        resume: "Assez récent dans le Rap US, j'aime principalement son flow et ses nombreuses mélodies dans ses morceaux. Il aime bien chanter sur ses refrains aussi."
     })
     .addTrack({
         name: 'All I Have',
@@ -531,6 +531,28 @@ const data = new ArtistsBuilder()
     .addTrack({
         name: "I'll Keep On",
         link: '2bTYKwkr6Y0'
+    })
+    .addArtist({
+        name: 'Oh Hiroshima',
+        tags: ['Post-Rock'],
+        image: 'https://i2.wp.com/somewherecold.net/wp-content/uploads/2016/10/Oh-Hiroshima-2.jpg?resize=400%2C162&ssl=1',
+        resume: "Un des rares groupes du mouvements qui a quelques passages chantées. Les compos sont bien conçues."
+    })
+    .addTrack({
+        name: "Ellipse",
+        link: 'Oa8fPtYX3I8'
+    })
+    .addTrack({
+        name: "Ruach",
+        link: '_PGnRrz3uSQ'
+    })
+    .addTrack({
+        name: "Holding Rivers",
+        link: 'ZnvF5k4StzI'
+    })
+    .addTrack({
+        name: "Drones",
+        link: 'B-8nqgVSJIc'
     })
     .build()
 
