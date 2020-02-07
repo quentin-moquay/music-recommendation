@@ -11,3 +11,11 @@ html {
 .notification a:not(.button):not(.dropdown-item) {
     text-decoration: none;
 }
+
+.menu-list a {
+    padding: 0;
+}
+
+.columns-menu {
+    margin: 0;
+}

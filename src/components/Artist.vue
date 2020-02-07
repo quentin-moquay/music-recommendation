@@ -25,7 +25,7 @@
                         <a v-on:click="addToPlaylist(value.playlist)"><i class="fa fa-folder-plus" /></a>
                     </li>
                     <li v-for="zik in value.playlist" v-bind:key="zik.link">
-                        <a v-on:click="addToPlaylist(zik)" class="columns">
+                        <a v-on:click="addToPlaylist(zik)" class="columns columns-menu">
                             <span class="column is-10">{{zik.name}}</span>
                             <i class="fa fa-plus-circle column is-2" />
                         </a>

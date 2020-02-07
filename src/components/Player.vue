@@ -1,5 +1,19 @@
 <template>
     <span>
+        <aside class="menu playlist notification is-dark">
+                <p class="menu-label">
+                    Playlist <i class="fa fa-music" />
+                </p>
+                <a v-on:click="clearPlaylist" v-if="playlist.length > 0"><i class="fa fa-eraser" /></a>
+                <ul class="menu-list">
+                    <li v-for="track in playlist" v-bind:key="track.link">
+                        <a class="columns columns-menu" :class="{'is-active':track === currentTrack}">
+                            <span class="column is-10" v-on:click="start(track)">{{track.artist.name}} - {{track.name}}&nbsp;</span>
+                            <i class="column is-2" v-on:click="removeTrack(track)"><i class="fa fa-minus-circle" /></i>
+                        </a>
+                    </li>
+                </ul>
+        </aside>
         <div class="columns">
             <div class="column is-3">
 
@@ -15,20 +29,7 @@
             </div>
             </div>
         <div class="columns">
-            <aside class="menu column is-2 notification is-dark">
-                <p class="menu-label">
-                    Playlist <i class="fa fa-music" />
-                </p>
-                <a v-on:click="clearPlaylist" v-if="playlist.length > 0"><i class="fa fa-eraser" /></a>
-                <ul class="menu-list">
-                    <li v-for="track in playlist" v-bind:key="track.link">
-                        <a class="columns" :class="{'is-active':track === currentTrack}">
-                            <span class="column is-10" v-on:click="start(track)">{{track.artist.name}} - {{track.name}}&nbsp;</span>
-                            <i class="column is-2" v-on:click="removeTrack(track)"><i class="fa fa-minus-circle" /></i>
-                        </a>
-                    </li>
-                </ul>
-            </aside>
+            <div class="column is-2"></div>
             <artists class="column is-10" @addToPlaylist="addToPlaylist" :filter="filter"/>
 
             <nav class="navbar is-fixed-bottom is-link">
@@ -72,8 +73,8 @@
         },
         mounted() {
             this.player = new YTPlayer('#player', {
-                width: 256,
-                height: 144
+                width: 192,
+                height: 108
             })
 
             this.player.on('playing', () => {
@@ -169,7 +170,11 @@
         cursor: pointer;
     }
 
-    aside {
-        min-height: 720px;
+    .playlist {
+        position: fixed;
+        left: 0;
+        width: 16%;
+        height: 720px;
+        overflow-y: auto;
     }
 </style>
