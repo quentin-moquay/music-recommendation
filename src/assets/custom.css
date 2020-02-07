@@ -7,3 +7,7 @@ html {
 .menu-list a:hover {
     background-color: #18848e;
 }
+
+.notification a:not(.button):not(.dropdown-item) {
+    text-decoration: none;
+}

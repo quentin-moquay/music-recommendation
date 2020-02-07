@@ -22,10 +22,9 @@
                 <a v-on:click="clearPlaylist" v-if="playlist.length > 0"><i class="fa fa-eraser" /></a>
                 <ul class="menu-list">
                     <li v-for="track in playlist" v-bind:key="track.link">
-                        <a :class="{'is-active':track === currentTrack}">
-                            <p><b v-on:click="start(track)">{{track.artist.name}} - {{track.name}}&nbsp;</b>
-                                <i v-on:click="removeTrack(track)"><i class="fa fa-minus-circle" /></i>
-                            </p>
+                        <a class="columns" :class="{'is-active':track === currentTrack}">
+                            <span class="column is-10" v-on:click="start(track)">{{track.artist.name}} - {{track.name}}&nbsp;</span>
+                            <i class="column is-2" v-on:click="removeTrack(track)"><i class="fa fa-minus-circle" /></i>
                         </a>
                     </li>
                 </ul>
