@@ -122,7 +122,7 @@ const data = new ArtistsBuilder()
         name: 'Maluns',
         tags: ['Downtempo', 'Psybient'],
         image: 'https://f4.bcbits.com/img/0008157851_10.jpg',
-        resume: ''
+        resume: 'Downtempo avec de bons moments psychedeliques.'
     })
     .addTrack({
         name: 'Afterburner',
