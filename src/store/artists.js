@@ -33,8 +33,8 @@ class ArtistsBuilder {
             this.artists.push(this.currentArtist)
         }
         return {
-            artists: this.artists,
-            tags: _.uniq(_.flatten(this.artists.map(artist => artist.tags)))
+            artists: _.sortBy(this.artists, 'name'),
+            tags: _.sortBy(_.uniq(_.flatten(this.artists.map(artist => artist.tags))))
         }
     }
 }
