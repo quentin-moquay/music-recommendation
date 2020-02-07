@@ -34,7 +34,7 @@
             <nav class="navbar is-fixed-bottom is-link">
                 <div class="navbar-start">
                     <span class="navbar-item">
-                        <img alt="Vue logo" src="./../assets/logo.png" />
+                        <img alt="Vue logo" src="@/assets/logo.jpg" />
                     </span>
                     <a class="navbar-item" v-on:click="previous" v-if="currentTrack && currentTrack !== playlist[0]"><i class="fa fa-angle-double-left"/></a>
                     <a class="navbar-item" v-on:click="swapResumePause" v-if="currentTrack">
