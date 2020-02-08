@@ -1,13 +1,13 @@
 import _ from 'lodash'
 
 class ArtistsBuilder {
-    
+
     constructor() {
         this.tags = []
         this.artists = []
         this.currentArtist = null
     }
-    
+
     addArtist(artist) {
         if (this.currentArtist) {
             this.artists.push(this.currentArtist)
@@ -18,7 +18,7 @@ class ArtistsBuilder {
         }
         return this
     }
-    
+
     addTrack(track) {
         if (!this.currentArtist) {
             return this
@@ -27,7 +27,7 @@ class ArtistsBuilder {
         this.currentArtist.playlist.push(track)
         return this
     }
-    
+
     build() {
         if (this.currentArtist) {
             this.artists.push(this.currentArtist)
@@ -553,6 +553,56 @@ const data = new ArtistsBuilder()
     .addTrack({
         name: "Drones",
         link: 'B-8nqgVSJIc'
+    })
+    .addArtist({
+        name: 'Combichrist',
+        tags: ['Indus', 'Aggrotech', 'Metal'],
+        image: 'https://www.ninkasi.fr/wp-content/uploads/2019/02/musique-combichrist-ninkasi-2019-agenda.jpg',
+        resume: "Groupe Norvégien qui se place à la croisée de la techno et du métal (mais souvent sans guitare électrique). Une sorte de Rammstein avec une voix qui hurle en permanence. C'est un groupe hyper \"primaire\", le but c'est de faire du bruit."
+    })
+    .addTrack({
+        name: 'This Shit Will Fuck You Up',
+        link: 'RibfuH4yF04'
+    })
+    .addTrack({
+        name: 'This Is My Rifle',
+        link: '7bEbCDZYXh8'
+    })
+    .addTrack({
+        name: 'Fuck That Shit',
+        link: 'EUFKkEkU0P4'
+    })
+    .addTrack({
+        name: 'Shut up and Swallow',
+        link: 'x0ABQjAt7D4'
+    })
+    .addTrack({
+        name: 'Never Surrender',
+        link: 'JLp2e2c75C0'
+    })
+    .addTrack({
+        name: 'Fuckmachine',
+        link: 'wBnCP9F5_L4'
+    })
+    .addTrack({
+        name: 'We Were Made to Love You',
+        link: '3WhPeso5Jro'
+    })
+    .addTrack({
+        name: 'Every Day Is War',
+        link: 'WfZOqWydXAw'
+    })
+    .addTrack({
+        name: 'From My Cold Dead Hands',
+        link: 'a0kqsZ_xTjM'
+    })
+    .addTrack({
+        name: 'Fuck Unicorns',
+        link: 'cwbuP9skryA'
+    })
+    .addTrack({
+        name: 'The Evil In Me',
+        link: 'moPL5Ngxicw'
     })
     .build()
 
