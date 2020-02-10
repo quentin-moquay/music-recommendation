@@ -42,7 +42,7 @@ class ArtistsBuilder {
 const data = new ArtistsBuilder()
     .addArtist({
         name: 'DJ Hyper',
-        tags: ['Indus', 'Electro'],
+        tags: ['Indus', 'EDM'],
         image: 'https://i.ytimg.com/vi/G70S5fumHso/maxresdefault.jpg',
         resume: 'Prod assez aggressive, son industriel avec de vrais instruments (guitare, basse, etc.) totalement modifiées au mixage.'
     })
@@ -220,7 +220,7 @@ const data = new ArtistsBuilder()
     })
     .addArtist({
         name: 'Breton',
-        tags: ['Pop', 'Electro'],
+        tags: ['Rock','Pop', 'Electro'],
         image: 'https://www.phonographecorp.com/wp-content/uploads/2012/04/breton04bd.jpg',
         resume: 'Un groupe Britannique plutôt sympa à écouter pour son côté Pop entrainant.'
     })
@@ -603,6 +603,44 @@ const data = new ArtistsBuilder()
     .addTrack({
         name: 'The Evil In Me',
         link: 'moPL5Ngxicw'
+    })
+    .addArtist({
+        name: 'Noisia',
+        tags: ['Drum & Bass', 'EDM', 'Dubstep'],
+        image: 'https://journalmetro.com/wp-content/uploads/2020/01/ART-Noisia-e1579659431920.jpg?w=256',
+        resume: 'Quelques compos qui valent sacrément le détour.'
+    })
+    .addTrack({
+        name: 'Red Heat',
+        link: 'sGlS_DbSU7Q'
+    })
+    .addTrack({
+        name: 'Hunter Theme',
+        link: 'LHlCEzIpwhM'
+    })
+    .addTrack({
+        name: 'Poison Theme',
+        link: 'hhJdu1v4tfU'
+    })
+    .addTrack({
+        name: 'Barbas Theme',
+        link: 'dqey8RWSPXQ'
+    })
+    .addTrack({
+        name: "Lilith's Club",
+        link: 'Tx3alHfGlRA'
+    })
+    .addTrack({
+        name: 'Stigma',
+        link: '40FNAAy75bQ'
+    })
+    .addTrack({
+        name: 'Collider',
+        link: '3RWpLWEetYg'
+    })
+    .addTrack({
+        name: 'Machine Gun',
+        link: 'SAO-lzl3vVQ'
     })
     .build()
 
