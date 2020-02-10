@@ -32,16 +32,31 @@
             <div class="column is-2"></div>
             <artists class="column is-10" @addToPlaylist="addToPlaylist" :filter="filter"/>
 
-            <nav class="navbar is-fixed-bottom is-link is-flex-mobile">
+            <nav class="bottom-player navbar is-fixed-bottom is-link is-flex-mobile">
                 <div class="navbar-start">
                     <span class="navbar-item">
                         <img alt="Vue logo" src="@/assets/logo.jpg" />
                     </span>
-                    <a class="navbar-item" v-on:click="previous" v-if="currentTrack && currentTrack !== playlist[0]"><i class="fa fa-angle-double-left"/></a>
-                    <a class="navbar-item" v-on:click="swapResumePause" v-if="currentTrack">
-                        <i :class="{'fa fa-play': pause, 'fa fa-pause': !pause}" />
-                    </a>
-                    <a class="navbar-item" v-on:click="next" v-if="currentTrack && currentTrack !== playlist[playlist.length - 1]"><i class="fa fa-angle-double-right"/></a>
+                    <span class="navbar-item">
+                        <button class="button is-light"
+                            :disabled="!currentTrack || currentTrack === playlist[0]"
+                            v-on:click="previous">
+                            <i class="fa fa-step-backward"/>
+                        </button>
+                    </span>
+                    <span class="navbar-item">
+                        <button class="button is-light"
+                            v-on:click="swapResumePause" :disabled="!currentTrack">
+                            <i :class="{'fa fa-play': pause, 'fa fa-pause': !pause}" />
+                        </button>
+                    </span>
+                    <span class="navbar-item">
+                        <button class="button is-light"
+                            :disabled="!currentTrack || currentTrack === playlist[playlist.length - 1]"
+                            v-on:click="next">
+                            <i class="fa fa-step-forward"/>
+                        </button>
+                    </span>
                 </div>
                 <div class="navbar-end">
                     <div id="player" class="navbar-item" />
@@ -178,5 +193,14 @@
         overflow-y: auto;
         z-index: 40;
         opacity: 0.9;
+    }
+
+    .bottom-player {
+        z-index: 41 !important;
+    }
+
+    .bottom-player .navbar-item button {
+        width: 50px;
+        height: 40px;
     }
 </style>
