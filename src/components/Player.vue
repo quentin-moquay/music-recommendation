@@ -1,6 +1,6 @@
 <template>
     <span>
-        <aside class="menu playlist notification is-dark">
+        <aside class="menu playlist notification is-dark is-hidden-mobile">
                 <p class="menu-label">
                     Playlist <i class="fa fa-music" />
                 </p>
@@ -32,7 +32,7 @@
             <div class="column is-2"></div>
             <artists class="column is-10" @addToPlaylist="addToPlaylist" :filter="filter"/>
 
-            <nav class="navbar is-fixed-bottom is-link">
+            <nav class="navbar is-fixed-bottom is-link is-flex-mobile">
                 <div class="navbar-start">
                     <span class="navbar-item">
                         <img alt="Vue logo" src="@/assets/logo.jpg" />
@@ -176,5 +176,7 @@
         width: 16%;
         height: 720px;
         overflow-y: auto;
+        z-index: 40;
+        opacity: 0.9;
     }
 </style>

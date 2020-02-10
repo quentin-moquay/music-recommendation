@@ -2,7 +2,7 @@
     <div>
         <template v-for="(line, i) in filteredArtists">
             <span class="columns" v-bind:key="i">
-                <span class="column tile is-3 is-vertical" v-for="(artist, j) in line" v-bind:key="artist.name">
+                <span class="column tile is-3 is-flex is-vertical" v-for="(artist, j) in line" v-bind:key="artist.name">
                     <artist v-model="line[j]" @addToPlaylist="addToPlaylist" />
                 </span>
             </span>
