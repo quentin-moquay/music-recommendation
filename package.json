@@ -14,7 +14,7 @@
     "vue-class-component": "^7.0.2",
     "vue-property-decorator": "^8.3.0",
     "bulma": "^0.8.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "@fortawesome/fontawesome-free": "^5.11.2"
   },
   "devDependencies": {
